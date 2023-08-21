@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Map App</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="/socket.io/socket.io.js"></script>
+    <script defer src="./src/main.js"></script>
+  </head>
+  <body>
+    <div class="lines">
+      <div class="sn"></div>
+      <div class="we"></div>
+    </div>
+    <div id="user" class="user"></div>
+    <div id="user-data" class="user-data"></div>
+
+    <button id="fake-user" class="fake-user">Create Fake User</button>
+    <button id="get-constants" class="get-constants">Get CONSTANTS</button>
+    <div id="list-of-users" class="list-of-users"></div>
+    <div id="scale" class="scale">
+      <div id="number"></div>
+      <div id="width"></div>
+    </div>
+  </body>
+</html>

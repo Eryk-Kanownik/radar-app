@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Handjet:wght@500&display=swap");
+
+* {
+  box-sizing: border-box;
+  font-family: "Handjet", cursive;
+}
+
+body {
+  margin: 0;
+  position: relative;
+  min-height: 100vh;
+  background: linear-gradient(to bottom, rgb(4, 0, 36), rgb(0, 0, 26));
+  overflow: hidden;
+}
+
+p {
+  margin: 0.2rem 0;
+}
+
+.lines {
+  z-index: -1;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+}
+
+.sn {
+  width: 1px;
+  background-color: rgb(51, 51, 51);
+  height: 100vh;
+  position: absolute;
+  left: calc(50% - 0.5px);
+}
+
+.we {
+  position: absolute;
+  height: 1px;
+  background-color: rgb(51, 51, 51);
+  width: 100vw;
+  top: calc(50% + 4px);
+}
+
+.user {
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  gap: 1rem;
+}
+
+.user-data {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  background-color: black;
+  padding: 0.5rem;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  text-align: center;
+  color: white;
+}
+
+.dot {
+  border-radius: 5px;
+  width: 10px;
+  height: 10px;
+}
+
+.user-other {
+  position: absolute;
+  color: white;
+  transform: translateX(-50%);
+  text-align: center;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+}
+
+.user-dot-other {
+  background-color: red;
+  box-shadow: 0 0 5px red;
+  animation: blip 1s infinite;
+  cursor: pointer;
+}
+
+.user-dot {
+  background-color: green;
+  box-shadow: 0 0 5px green;
+  animation: blip 1s infinite;
+}
+
+.list-of-users {
+  height: 100vh;
+}
+
+.fake-user {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  padding: 1rem;
+  font-size: 1.5rem;
+}
+
+@keyframes blip {
+  from {
+    box-shadow: 0 0 5px green;
+  }
+  to {
+    box-shadow: 0 0 500px green;
+  }
+}
+
+.get-constants {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  padding: 1rem;
+  font-size: 1.5rem;
+}
+
+.scale {
+  position: absolute;
+
+  height: 1px;
+  width: 100%;
+  z-index: 1;
+  bottom: 2rem;
+  left: 0;
+  padding: 1rem;
+  color: white;
+  font-size: 2rem;
+}
